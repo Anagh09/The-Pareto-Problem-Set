@@ -1,7 +1,6 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(s) == sorted(t)
-        """
+        
         if len(s) != len(t):
             return False
         countS, countT = {},{} # creating a two colum hash map
@@ -13,7 +12,10 @@ class Solution:
             if countS[c] != countT.get(c, 0): 
                 return False
         return True 
-
+        """
         a one line code for basically doint the same thing
         return Counter(s) == Counter(t) 
+
+        another way of doung it by using sorting 
+        return sorted(s) == sorted(t)
         """
