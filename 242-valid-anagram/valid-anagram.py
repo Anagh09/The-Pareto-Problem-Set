@@ -1,7 +1,6 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        return Counter(s) == Counter(t)
-        
+        return sorted(s) == sorted(t)
         """
         if len(s) != len(t):
             return False
@@ -14,4 +13,7 @@ class Solution:
             if countS[c] != countT.get(c, 0): 
                 return False
         return True 
+
+        a one line code for basically doint the same thing
+        return Counter(s) == Counter(t) 
         """
