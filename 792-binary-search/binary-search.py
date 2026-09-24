@@ -11,3 +11,4 @@ class Solution:
             else:
                 return m
         return -1
+        #run time is O(log_2 n)
