@@ -10,7 +10,8 @@ class Solution:
                 break
             m = (l+r)//2
             res = min(res, nums[m])
-            if nums[m] >= nums[l]:
+            #it is important that it is greater than equal to and not just greater than
+            if nums[m] >= nums[l]: 
                 l = m+1
             else:
                 r = m-1
